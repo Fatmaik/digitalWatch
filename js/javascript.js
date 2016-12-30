@@ -13,9 +13,11 @@ function hora() {
     ex: Instead 4 seconds it receive 04 seconds/minuts or hours*/
     if (date.getSeconds() < 10) {
         var seconds = "0" + date.getSeconds();
-    } else if (date.getMinutes() < 10) {
+    }
+    if (date.getMinutes() < 10) {
         var minutes = "0" + date.getMinutes();
-    } else if (date.getHours() < 10) {
+    }
+    if (date.getHours() < 10) {
         var hours = "0" + date.getHours();
     };
 
